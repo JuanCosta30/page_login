@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/6a32ca54e9.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Open Sans', sans-serif;
+        }
+        body{
+            background-image: url(https://rotadeferias.com.br/wp-content/uploads/2021/01/shutterstock_557205925.jpg);
+            background-position: top;
+            background-color: blue;
+            background-blend-mode:multiply;
+            background-repeat: no-repeat;
+            background-size: cover;
+            overflow: overlay;
+            
+        }
+        main{
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+        }
+        h1{
+            text-align:center;
+            margin-block: auto;
+            font-size:10rem;
+            color: white;
+            text-shadow: 0px 10px 1px #3131ff;
+    
+
+        }
+           
+        aside{
+            background-color: rgb(255, 255, 255);
+            width:600px;
+            height:100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items: center;   
+
+        }
+        form{
+            display:flex;
+            flex-direction: column;
+            margin-bottom:15px;
+            
+        }
+
+        form h2{
+            border-bottom: 1px solid rgb(187, 187, 187);
+            padding-bottom:30px;
+            font-weight: 600;
+        }
+    
+        label:nth-child(2){
+           margin-top: 30px;
+        }
+        label{
+
+            font-size:1rem;
+            font-weight: 600;
+            color: blue;
+            margin-block:10px;
+        }
+        input{
+            outline:none;
+            border:1px solid rgb(163, 163, 163);
+            width:300px;
+            height:45px;
+            border-radius: 5px;
+            font-size: 1rem;
+            padding: 0 10px;
+        }
+        input:hover{
+            border:1px solid blue;
+
+        }
+        input:focus{
+            outline:2px solid blue;
+            border:none;
+        }
+        input::placeholder{
+            color: rgb(177, 177, 177);
+        }
+      
+        button{
+            background-color:blue;
+            border-radius: 5px;
+            padding:15px;
+            border: none;
+            color: white;
+            font-size: 1rem;
+            font-weight: 600;
+            margin-top: 25px;
+            transition:  0.1s;
+        }
+        button:hover{
+            background-color:rgb(49, 49, 250);
+            cursor: pointer;
+            
+        }
+        button:active{
+            background-color: rgb(6, 6, 189);
+        }
+        p{
+            font-size:.9rem;
+        }
+        a{
+            color: blue;
+            text-decoration: none;
+        }
+        div{
+            position: relative;
+        }
+        .iconeye{
+            position: absolute;
+            right: 0;
+            margin-top: 12px;
+            padding-right: 10px;
+            opacity: 0.5;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>LOGO</h1>
+        <aside>
+            <form action="">
+                <h2>Conheça!</h2>
+                <label for="name">Nome</label>
+                <input type="text" name="" id="email" placeholder="Digite seu nome" required>
+                <label for="email">Email</label>
+                <input type="email" name="" id="email" placeholder="email@email.com" required>
+                <label for="senha">Senha</label>
+                <div>
+                    <input type="password" id="password" placeholder="*************" maxlength="50" required>
+                    <img  class="iconeye" width="22px" onclick="visualizar()" src="../page_login/svg/eye-regular.svg" >
+                </div>
+                <button>Cadastre-se</button>
+            </form>
+            <p>Já é cadastrado?</p>
+            <p><a href="#">Clique aqui</a></p>
+        </aside>
+    </main>
+    
+    <script src="script.js"></script>
+   
+</body>
+</html>
