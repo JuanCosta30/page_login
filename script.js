@@ -9,7 +9,6 @@ function visualizar(){
     }else{
         fecharpassword()
     }
-
 }
 
 function abrirpassword(){
